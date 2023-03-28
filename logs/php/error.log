@@ -1,0 +1,157 @@
+[28-Mar-2023 18:15:50 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/Users/chasedemaster.tech/Library/Application Support/Local/lightning-services/php-8.0.22+6/bin/darwin/lib/php/extensions/no-debug-non-zts-20200930/imagick.so' (tried: /Users/chasedemaster.tech/Library/Application Support/Local/lightning-services/php-8.0.22+6/bin/darwin/lib/php/extensions/no-debug-non-zts-20200930/imagick.so (dlopen(/Users/chasedemaster.tech/Library/Application Support/Local/lightning-services/php-8.0.22+6/bin/darwin/lib/php/extensions/no-debug-non-zts-20200930/imagick.so, 0x0009): tried: '/Users/chasedemaster.tech/Library/Application Support/Local/lightning-services/php-8.0.22+6/bin/darwin/lib/php/extensions/no-debug-non-zts-20200930/imagick.so' (mach-o file, but is an incompatible architecture (have (x86_64), need (arm64e)))), /opt/homebrew/Cellar/php/8.2.4/lib/php/20220829//Users/chasedemaster.tech/Library/Application Support/Local/lightning-services/php-8.0.22+6/bin/darwin/lib/php/extensions/no-debug-non-zts-20200930/imagick.so.so (dlopen(/opt/homebrew/Cellar/php/8.2.4/lib/php/20220829//Users/chasedemaster.tech/Library/Application Support/Local/lightning-services/php-8.0.22+6/bin/darwin/lib/php/extensions/no-debug-non-zts-20200930/imagick.so.so, 0x0009): tried: '/opt/homebrew/Cellar/php/8.2.4/lib/php/20220829//Users/chasedemaster.tech/Library/Application Support/Local/lightning-services/php-8.0.22+6/bin/darwin/lib/php/extensions/no-debug-non-zts-20200930/imagick.so.so' (no such file))) in Unknown on line 0
+[28-Mar-2023 18:20:26 UTC] PHP Warning:  PHP Startup: imagick: Unable to initialize module
+Module compiled with module API=20200930
+PHP    compiled with module API=20210902
+These options need to match
+ in Unknown on line 0
+[28-Mar-2023 18:20:27 UTC] PHP Warning:  PHP Startup: imagick: Unable to initialize module
+Module compiled with module API=20200930
+PHP    compiled with module API=20210902
+These options need to match
+ in Unknown on line 0
+[28-Mar-2023 18:23:36 UTC] PHP Fatal error:  Uncaught Roots\Acorn\Assets\Contracts\ManifestNotFoundException: The manifest [/Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/public/manifest.json] cannot be found. in /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/roots/acorn/src/Roots/Acorn/Assets/Manager.php:133
+Stack trace:
+#0 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/roots/acorn/src/Roots/Acorn/Assets/Manager.php(101): Roots\Acorn\Assets\Manager->getJsonManifest('/Users/chasedem...')
+#1 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/roots/acorn/src/Roots/Acorn/Assets/Manager.php(76): Roots\Acorn\Assets\Manager->resolve('theme', Array)
+#2 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/roots/acorn/src/Roots/Acorn/Assets/AssetsServiceProvider.php(22): Roots\Acorn\Assets\Manager->manifest('theme')
+#3 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/illuminate/container/Container.php(885): Roots\Acorn\Assets\AssetsServiceProvider->Roots\Acorn\Assets\{closure}(Object(Roots\Acorn\Application), Array)
+#4 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/illuminate/container/Container.php(770): Illuminate\Container\Container->build(Object(Closure))
+#5 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/roots/acorn/src/Illuminate/Foundation/Application.php(860): Illuminate\Container\Container->resolve('assets.manifest', Array, true)
+#6 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/illuminate/container/Container.php(706): Illuminate\Foundation\Application->resolve('assets.manifest', Array)
+#7 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/roots/acorn/src/Illuminate/Foundation/Application.php(845): Illuminate\Container\Container->make('assets.manifest', Array)
+#8 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/roots/acorn/src/Illuminate/Foundation/helpers.php(120): Illuminate\Foundation\Application->make('assets.manifest', Array)
+#9 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/roots/acorn/src/Roots/helpers.php(37): app('assets.manifest')
+#10 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/app/setup.php(26): Roots\bundle('editor')
+#11 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-includes/class-wp-hook.php(308): App\{closure}('')
+#12 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#13 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#14 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-includes/class-wp-customize-widgets.php(879): do_action('enqueue_block_e...')
+#15 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-includes/class-wp-hook.php(308): WP_Customize_Widgets->enqueue_scripts('')
+#16 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#17 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#18 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-admin/customize.php(123): do_action('customize_contr...')
+#19 {main}
+  thrown in /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/roots/acorn/src/Roots/Acorn/Assets/Manager.php on line 133
+[28-Mar-2023 18:23:36 UTC] PHP Warning:  Trying to access array offset on value of type bool in /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-includes/class-wp-recovery-mode-email-service.php on line 372
+[28-Mar-2023 18:23:36 UTC] PHP Warning:  Trying to access array offset on value of type bool in /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-includes/class-wp-recovery-mode-email-service.php on line 373
+[28-Mar-2023 18:23:47 UTC] PHP Fatal error:  Uncaught Roots\Acorn\Assets\Contracts\ManifestNotFoundException: The manifest [/Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/public/manifest.json] cannot be found. in /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/roots/acorn/src/Roots/Acorn/Assets/Manager.php:133
+Stack trace:
+#0 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/roots/acorn/src/Roots/Acorn/Assets/Manager.php(101): Roots\Acorn\Assets\Manager->getJsonManifest('/Users/chasedem...')
+#1 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/roots/acorn/src/Roots/Acorn/Assets/Manager.php(76): Roots\Acorn\Assets\Manager->resolve('theme', Array)
+#2 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/roots/acorn/src/Roots/Acorn/Assets/AssetsServiceProvider.php(22): Roots\Acorn\Assets\Manager->manifest('theme')
+#3 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/illuminate/container/Container.php(885): Roots\Acorn\Assets\AssetsServiceProvider->Roots\Acorn\Assets\{closure}(Object(Roots\Acorn\Application), Array)
+#4 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/illuminate/container/Container.php(770): Illuminate\Container\Container->build(Object(Closure))
+#5 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/roots/acorn/src/Illuminate/Foundation/Application.php(860): Illuminate\Container\Container->resolve('assets.manifest', Array, true)
+#6 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/illuminate/container/Container.php(706): Illuminate\Foundation\Application->resolve('assets.manifest', Array)
+#7 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/roots/acorn/src/Illuminate/Foundation/Application.php(845): Illuminate\Container\Container->make('assets.manifest', Array)
+#8 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/roots/acorn/src/Illuminate/Foundation/helpers.php(120): Illuminate\Foundation\Application->make('assets.manifest', Array)
+#9 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/roots/acorn/src/Roots/helpers.php(37): app('assets.manifest')
+#10 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/app/setup.php(26): Roots\bundle('editor')
+#11 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-includes/class-wp-hook.php(308): App\{closure}('')
+#12 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#13 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#14 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-includes/class-wp-customize-widgets.php(879): do_action('enqueue_block_e...')
+#15 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-includes/class-wp-hook.php(308): WP_Customize_Widgets->enqueue_scripts('')
+#16 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#17 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#18 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-admin/customize.php(123): do_action('customize_contr...')
+#19 {main}
+  thrown in /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/roots/acorn/src/Roots/Acorn/Assets/Manager.php on line 133
+[28-Mar-2023 18:23:49 UTC] PHP Fatal error:  Uncaught Roots\Acorn\Assets\Contracts\ManifestNotFoundException: The manifest [/Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/public/manifest.json] cannot be found. in /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/roots/acorn/src/Roots/Acorn/Assets/Manager.php:133
+Stack trace:
+#0 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/roots/acorn/src/Roots/Acorn/Assets/Manager.php(101): Roots\Acorn\Assets\Manager->getJsonManifest('/Users/chasedem...')
+#1 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/roots/acorn/src/Roots/Acorn/Assets/Manager.php(76): Roots\Acorn\Assets\Manager->resolve('theme', Array)
+#2 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/roots/acorn/src/Roots/Acorn/Assets/AssetsServiceProvider.php(22): Roots\Acorn\Assets\Manager->manifest('theme')
+#3 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/illuminate/container/Container.php(885): Roots\Acorn\Assets\AssetsServiceProvider->Roots\Acorn\Assets\{closure}(Object(Roots\Acorn\Application), Array)
+#4 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/illuminate/container/Container.php(770): Illuminate\Container\Container->build(Object(Closure))
+#5 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/roots/acorn/src/Illuminate/Foundation/Application.php(860): Illuminate\Container\Container->resolve('assets.manifest', Array, true)
+#6 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/illuminate/container/Container.php(706): Illuminate\Foundation\Application->resolve('assets.manifest', Array)
+#7 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/roots/acorn/src/Illuminate/Foundation/Application.php(845): Illuminate\Container\Container->make('assets.manifest', Array)
+#8 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/roots/acorn/src/Illuminate/Foundation/helpers.php(120): Illuminate\Foundation\Application->make('assets.manifest', Array)
+#9 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/roots/acorn/src/Roots/helpers.php(37): app('assets.manifest')
+#10 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/app/setup.php(26): Roots\bundle('editor')
+#11 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-includes/class-wp-hook.php(308): App\{closure}('')
+#12 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#13 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#14 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-includes/class-wp-customize-widgets.php(879): do_action('enqueue_block_e...')
+#15 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-includes/class-wp-hook.php(308): WP_Customize_Widgets->enqueue_scripts('')
+#16 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#17 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#18 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-admin/customize.php(123): do_action('customize_contr...')
+#19 {main}
+  thrown in /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/roots/acorn/src/Roots/Acorn/Assets/Manager.php on line 133
+[28-Mar-2023 18:26:52 UTC] PHP Fatal error:  Uncaught Roots\Acorn\Assets\Contracts\ManifestNotFoundException: The manifest [/Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/public/manifest.json] cannot be found. in /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/roots/acorn/src/Roots/Acorn/Assets/Manager.php:133
+Stack trace:
+#0 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/roots/acorn/src/Roots/Acorn/Assets/Manager.php(101): Roots\Acorn\Assets\Manager->getJsonManifest('/Users/chasedem...')
+#1 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/roots/acorn/src/Roots/Acorn/Assets/Manager.php(76): Roots\Acorn\Assets\Manager->resolve('theme', Array)
+#2 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/roots/acorn/src/Roots/Acorn/Assets/AssetsServiceProvider.php(22): Roots\Acorn\Assets\Manager->manifest('theme')
+#3 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/illuminate/container/Container.php(885): Roots\Acorn\Assets\AssetsServiceProvider->Roots\Acorn\Assets\{closure}(Object(Roots\Acorn\Application), Array)
+#4 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/illuminate/container/Container.php(770): Illuminate\Container\Container->build(Object(Closure))
+#5 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/roots/acorn/src/Illuminate/Foundation/Application.php(860): Illuminate\Container\Container->resolve('assets.manifest', Array, true)
+#6 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/illuminate/container/Container.php(706): Illuminate\Foundation\Application->resolve('assets.manifest', Array)
+#7 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/roots/acorn/src/Illuminate/Foundation/Application.php(845): Illuminate\Container\Container->make('assets.manifest', Array)
+#8 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/roots/acorn/src/Illuminate/Foundation/helpers.php(120): Illuminate\Foundation\Application->make('assets.manifest', Array)
+#9 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/roots/acorn/src/Roots/helpers.php(37): app('assets.manifest')
+#10 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/app/setup.php(26): Roots\bundle('editor')
+#11 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-includes/class-wp-hook.php(308): App\{closure}('')
+#12 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#13 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#14 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-includes/class-wp-customize-widgets.php(879): do_action('enqueue_block_e...')
+#15 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-includes/class-wp-hook.php(308): WP_Customize_Widgets->enqueue_scripts('')
+#16 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#17 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#18 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-admin/customize.php(123): do_action('customize_contr...')
+#19 {main}
+  thrown in /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/roots/acorn/src/Roots/Acorn/Assets/Manager.php on line 133
+[28-Mar-2023 18:27:56 UTC] PHP Fatal error:  Uncaught Roots\Acorn\Assets\Contracts\ManifestNotFoundException: The manifest [/Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/public/manifest.json] cannot be found. in /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/roots/acorn/src/Roots/Acorn/Assets/Manager.php:133
+Stack trace:
+#0 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/roots/acorn/src/Roots/Acorn/Assets/Manager.php(101): Roots\Acorn\Assets\Manager->getJsonManifest('/Users/chasedem...')
+#1 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/roots/acorn/src/Roots/Acorn/Assets/Manager.php(76): Roots\Acorn\Assets\Manager->resolve('theme', Array)
+#2 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/roots/acorn/src/Roots/Acorn/Assets/AssetsServiceProvider.php(22): Roots\Acorn\Assets\Manager->manifest('theme')
+#3 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/illuminate/container/Container.php(885): Roots\Acorn\Assets\AssetsServiceProvider->Roots\Acorn\Assets\{closure}(Object(Roots\Acorn\Application), Array)
+#4 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/illuminate/container/Container.php(770): Illuminate\Container\Container->build(Object(Closure))
+#5 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/roots/acorn/src/Illuminate/Foundation/Application.php(860): Illuminate\Container\Container->resolve('assets.manifest', Array, true)
+#6 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/illuminate/container/Container.php(706): Illuminate\Foundation\Application->resolve('assets.manifest', Array)
+#7 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/roots/acorn/src/Illuminate/Foundation/Application.php(845): Illuminate\Container\Container->make('assets.manifest', Array)
+#8 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/roots/acorn/src/Illuminate/Foundation/helpers.php(120): Illuminate\Foundation\Application->make('assets.manifest', Array)
+#9 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/roots/acorn/src/Roots/helpers.php(37): app('assets.manifest')
+#10 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/app/setup.php(26): Roots\bundle('editor')
+#11 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-includes/class-wp-hook.php(308): App\{closure}('')
+#12 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#13 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#14 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-includes/class-wp-customize-widgets.php(879): do_action('enqueue_block_e...')
+#15 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-includes/class-wp-hook.php(308): WP_Customize_Widgets->enqueue_scripts('')
+#16 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#17 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#18 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-admin/customize.php(123): do_action('customize_contr...')
+#19 {main}
+  thrown in /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/roots/acorn/src/Roots/Acorn/Assets/Manager.php on line 133
+[28-Mar-2023 18:28:13 UTC] PHP Fatal error:  Uncaught Roots\Acorn\Assets\Contracts\ManifestNotFoundException: The manifest [/Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/public/manifest.json] cannot be found. in /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/roots/acorn/src/Roots/Acorn/Assets/Manager.php:133
+Stack trace:
+#0 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/roots/acorn/src/Roots/Acorn/Assets/Manager.php(101): Roots\Acorn\Assets\Manager->getJsonManifest('/Users/chasedem...')
+#1 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/roots/acorn/src/Roots/Acorn/Assets/Manager.php(76): Roots\Acorn\Assets\Manager->resolve('theme', Array)
+#2 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/roots/acorn/src/Roots/Acorn/Assets/AssetsServiceProvider.php(22): Roots\Acorn\Assets\Manager->manifest('theme')
+#3 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/illuminate/container/Container.php(885): Roots\Acorn\Assets\AssetsServiceProvider->Roots\Acorn\Assets\{closure}(Object(Roots\Acorn\Application), Array)
+#4 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/illuminate/container/Container.php(770): Illuminate\Container\Container->build(Object(Closure))
+#5 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/roots/acorn/src/Illuminate/Foundation/Application.php(860): Illuminate\Container\Container->resolve('assets.manifest', Array, true)
+#6 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/illuminate/container/Container.php(706): Illuminate\Foundation\Application->resolve('assets.manifest', Array)
+#7 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/roots/acorn/src/Illuminate/Foundation/Application.php(845): Illuminate\Container\Container->make('assets.manifest', Array)
+#8 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/roots/acorn/src/Illuminate/Foundation/helpers.php(120): Illuminate\Foundation\Application->make('assets.manifest', Array)
+#9 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/roots/acorn/src/Roots/helpers.php(37): app('assets.manifest')
+#10 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/app/setup.php(26): Roots\bundle('editor')
+#11 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-includes/class-wp-hook.php(308): App\{closure}('')
+#12 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#13 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#14 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-includes/class-wp-customize-widgets.php(879): do_action('enqueue_block_e...')
+#15 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-includes/class-wp-hook.php(308): WP_Customize_Widgets->enqueue_scripts('')
+#16 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#17 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#18 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-admin/customize.php(123): do_action('customize_contr...')
+#19 {main}
+  thrown in /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/roots/acorn/src/Roots/Acorn/Assets/Manager.php on line 133
+[28-Mar-2023 20:32:12 UTC] PHP Parse error:  syntax error, unexpected end of file, expecting "(" in /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/plugins/insperity-cpt/insperity-client.php on line 12
+[28-Mar-2023 20:33:04 UTC] PHP Parse error:  syntax error, unexpected token "function" in /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/plugins/insperity-cpt/insperity-client.php on line 13
+[28-Mar-2023 20:34:22 UTC] PHP Parse error:  syntax error, unexpected token "function" in /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/plugins/insperity-cpt/insperity-client.php on line 13
+[28-Mar-2023 20:35:06 UTC] PHP Parse error:  syntax error, unexpected token "function" in /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/plugins/insperity-cpt/insperity-client.php on line 13
+[28-Mar-2023 20:36:30 UTC] PHP Parse error:  syntax error, unexpected token "}" in /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/plugins/insperity-cpt/insperity-client.php on line 23
+[28-Mar-2023 20:36:39 UTC] PHP Parse error:  syntax error, unexpected token "}" in /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/plugins/insperity-cpt/insperity-client.php on line 23
