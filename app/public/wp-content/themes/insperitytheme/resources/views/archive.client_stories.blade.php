@@ -15,10 +15,11 @@
 {{-- tailwind class containers and alignement  --}}
 >
 
-  @while(have_posts()) @php(the_post())
-    @includeFirst(['partials.content-' . get_post_type(), 'partials.content'])
+  @while(have_posts()) @php(the_post() )
+    @includeFirst(['partials.content-' . get_post_type(), 'partials.content', get_the_terms()])
     
   @endwhile
+  
 </div>
 
   {!! get_the_posts_navigation() !!}
