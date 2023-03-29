@@ -6,11 +6,20 @@
         <article <?php (post_class()); ?>>
 
 
-            <div
-                class="pl-1 pb-1 pt-1 text-white font-semibold bg-blue-900 box-content h-6 w-40 shadow-md rounded-br-lg">
-                get taxonomy 
-                <?php (get_the_terms($post->ID, 'content_type')); ?>
-                here
+            <div>
+               
+                <div class="pl-1 pb-1 pt-1 text-white font-semibold bg-blue-900 box-content h-6 w-40 shadow-md rounded-br-lg">
+                    <?php $terms = get_the_terms($post->ID, 'content_type'); ?>
+                    <?php if($terms): ?>
+                        <?php $__currentLoopData = $terms; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $term): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                            <?php echo e($term->name); ?>
+
+                            
+                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+                        Taxonomy here
+                    <?php endif; ?>
+                </div>
+                
             </div>
             <header>
                 <h2 class="entry-title font-bold text-xl font-serif text-sky-950 justify-center p-2 text-blue-900">
