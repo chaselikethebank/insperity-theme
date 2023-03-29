@@ -10,12 +10,12 @@
             <div>
                
                 <div class="pl-1 pb-1 pt-1 text-white font-semibold bg-blue-900 box-content h-6 w-40 shadow-md rounded-br-lg">
-                    <?php $terms = get_the_terms($post->ID, 'content_type'); ?>
+                    <?php $terms = get_the_terms($post->ID, 'content-type'); ?>
                     @if ($terms)
                         @foreach ($terms as $term)
                             {{ $term->name }}
                         @endforeach
-                        Taxonomy here
+                        
                     @endif
             </div>
 
