@@ -3,6 +3,7 @@
     <div class="box-content h-220 w-60 shadow-md p-4 rounded-md bg-slate-100">
         cpt Image/Vid goes here
         <article @php(post_class())>
+            {{-- @php() --}}
             <header >
                 cpt:
                 <h2 class="entry-title font-bold text-xl font-serif text-sky-950 justify-center ">
