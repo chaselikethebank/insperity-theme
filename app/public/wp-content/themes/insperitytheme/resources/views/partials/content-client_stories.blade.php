@@ -4,8 +4,8 @@
         cpt Image/Vid goes here
         <article @php(post_class())>
             {{-- @php() --}}
+            get taxonomy here
             <header >
-                cpt:
                 <h2 class="entry-title font-bold text-xl font-serif text-sky-950 justify-center ">
                     <a href="{{ get_permalink() }}">
                         
