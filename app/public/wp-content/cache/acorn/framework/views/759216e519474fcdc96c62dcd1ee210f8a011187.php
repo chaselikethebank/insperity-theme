@@ -25,6 +25,7 @@
   <?php endif; ?>
 
   <?php while(have_posts()): ?> <?php (the_post()); ?>
+  
     <?php echo $__env->first(['partials.content-' . get_post_type(), 'partials.content'], \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
   <?php endwhile; ?>
 
