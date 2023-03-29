@@ -1,25 +1,43 @@
-<div class="flex flex-wrap gap-8 ">
-    
-    <div class="box-content h-220 w-60 shadow-md p-4 rounded-md bg-slate-100">
-        cpt Image/Vid goes here
+
+
+
+
+<div class="flex flex-wrap gap-5 justify-center alignment-center">
+    <div class="box-content max-w-xs shadow-md p-4 rounded-md bg-sky-50">
+        
+        <img class="p1 rounded-md " src="<?php the_post_thumbnail_url();?>"
+        
+        />
+        
         <article <?php (post_class()); ?>>
+            <?php 
+            $termsArray = get_the_terms($post->ID, 'content_type');
+            $termsSlug = "";
+            foreach ($termsArray as $term) {
+                $termsSlug .= $term->name . ' ';
+            }
+            ?>
             
-            get taxonomy here
+            <div class="pl-1 pb-1 text-white font-semibold bg-blue-900 box-content h-6 w-40 shadow-md rounded-br-lg" <?php echo $termsSlug; ?>>
+                get taxonomy here
+            </div>
             <header >
-                <h2 class="entry-title font-bold text-xl font-serif text-sky-950 justify-center ">
+                <h2 class="entry-title font-bold text-xl font-serif text-sky-950 justify-center p-2 text-blue-900">
                     <a href="<?php echo e(get_permalink()); ?>">
                         
                         <?php echo $title; ?>
 
                     </a>
                 </h2>
-                <?php echo $__env->make('partials.entry-meta', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+                
             </header>
 
-            <div class="entry-summary ">
-                cpt excerpt:
+            <div class="entry-summary justify-center p-2">
+                
                 <?php (the_excerpt()); ?>
+                
             </div>
+            
         </article>
     </div>
 
