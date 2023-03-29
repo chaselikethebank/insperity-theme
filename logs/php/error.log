@@ -428,3 +428,59 @@ Stack trace:
 #8 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/index.php(17): require('/Users/chasedem...')
 #9 {main}
   thrown in /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/cache/acorn/framework/views/d97d794e9fd0b722bfaa0df890581ffd29b71acb.php on line 6
+[29-Mar-2023 11:16:54 UTC] PHP Fatal error:  Uncaught ParseError: syntax error, unexpected token ")" in /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/cache/acorn/framework/views/d97d794e9fd0b722bfaa0df890581ffd29b71acb.php:6
+Stack trace:
+#0 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/illuminate/filesystem/Filesystem.php(110): Illuminate\Filesystem\Filesystem::Illuminate\Filesystem\{closure}()
+#1 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/illuminate/view/Engines/PhpEngine.php(58): Illuminate\Filesystem\Filesystem->getRequire('/Users/chasedem...', Array)
+#2 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/illuminate/view/Engines/CompilerEngine.php(70): Illuminate\View\Engines\PhpEngine->evaluatePath('/Users/chasedem...', Array)
+#3 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/illuminate/view/View.php(195): Illuminate\View\Engines\CompilerEngine->get('/Users/chasedem...', Array)
+#4 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/illuminate/view/View.php(178): Illuminate\View\View->getContents()
+#5 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/illuminate/view/View.php(147): Illuminate\View\View->renderContents()
+#6 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/cache/acorn/framework/views/759216e519474fcdc96c62dcd1ee210f8a011187.php(29): Illuminate\View\View->render()
+#7 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/illuminate/filesystem/Filesystem.php(109): require('/Users/chasedem...')
+#8 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/illuminate/filesystem/Filesystem.php(110): Illuminate\Filesystem\Filesystem::Illuminate\Filesystem\{closure}()
+#9 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/illuminate/view/Engines/PhpEngine.php(58): Illuminate\Filesystem\Filesystem->getRequire('/Users/chasedem...', Array)
+#10 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/illuminate/view/Engines/CompilerEngine.php(70): Illuminate\View\Engines\PhpEngine->evaluatePath('/Users/chasedem...', Array)
+#11 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/illuminate/view/View.php(195): Illuminate\View\Engines\CompilerEngine->get('/Users/chasedem...', Array)
+#12 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/illuminate/view/View.php(178): Illuminate\View\View->getContents()
+#13 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/illuminate/view/View.php(147): Illuminate\View\View->renderContents()
+#14 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/index.php(14): Illuminate\View\View->render()
+#15 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-includes/template-loader.php(106): include('/Users/chasedem...')
+#16 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-blog-header.php(19): require_once('/Users/chasedem...')
+#17 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/index.php(17): require('/Users/chasedem...')
+#18 {main}
+
+Next Illuminate\View\ViewException: syntax error, unexpected token ")" (View: /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/resources/views/partials/content-client_stories.blade.php) in /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/cache/acorn/framework/views/d97d794e9fd0b722bfaa0df890581ffd29b71acb.php:6
+Stack trace:
+#0 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/illuminate/view/Engines/PhpEngine.php(60): Illuminate\View\Engines\CompilerEngine->handleViewException(Object(ParseError), 3)
+#1 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/illuminate/view/Engines/CompilerEngine.php(70): Illuminate\View\Engines\PhpEngine->evaluatePath('/Users/chasedem...', Array)
+#2 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/illuminate/view/View.php(195): Illuminate\View\Engines\CompilerEngine->get('/Users/chasedem...', Array)
+#3 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/illuminate/view/View.php(178): Illuminate\View\View->getContents()
+#4 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/illuminate/view/View.php(147): Illuminate\View\View->renderContents()
+#5 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/cache/acorn/framework/views/759216e519474fcdc96c62dcd1ee210f8a011187.php(29): Illuminate\View\View->render()
+#6 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/illuminate/filesystem/Filesystem.php(109): require('/Users/chasedem...')
+#7 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/illuminate/filesystem/Filesystem.php(110): Illuminate\Filesystem\Filesystem::Illuminate\Filesystem\{closure}()
+#8 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/illuminate/view/Engines/PhpEngine.php(58): Illuminate\Filesystem\Filesystem->getRequire('/Users/chasedem...', Array)
+#9 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/illuminate/view/Engines/CompilerEngine.php(70): Illuminate\View\Engines\PhpEngine->evaluatePath('/Users/chasedem...', Array)
+#10 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/illuminate/view/View.php(195): Illuminate\View\Engines\CompilerEngine->get('/Users/chasedem...', Array)
+#11 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/illuminate/view/View.php(178): Illuminate\View\View->getContents()
+#12 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/illuminate/view/View.php(147): Illuminate\View\View->renderContents()
+#13 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/index.php(14): Illuminate\View\View->render()
+#14 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-includes/template-loader.php(106): include('/Users/chasedem...')
+#15 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-blog-header.php(19): require_once('/Users/chasedem...')
+#16 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/index.php(17): require('/Users/chasedem...')
+#17 {main}
+
+Next Illuminate\View\ViewException: syntax error, unexpected token ")" (View: /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/resources/views/partials/content-client_stories.blade.php) (View: /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/resources/views/partials/content-client_stories.blade.php) in /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/cache/acorn/framework/views/d97d794e9fd0b722bfaa0df890581ffd29b71acb.php:6
+Stack trace:
+#0 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/illuminate/view/Engines/PhpEngine.php(60): Illuminate\View\Engines\CompilerEngine->handleViewException(Object(Illuminate\View\ViewException), 1)
+#1 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/illuminate/view/Engines/CompilerEngine.php(70): Illuminate\View\Engines\PhpEngine->evaluatePath('/Users/chasedem...', Array)
+#2 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/illuminate/view/View.php(195): Illuminate\View\Engines\CompilerEngine->get('/Users/chasedem...', Array)
+#3 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/illuminate/view/View.php(178): Illuminate\View\View->getContents()
+#4 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/vendor/illuminate/view/View.php(147): Illuminate\View\View->renderContents()
+#5 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/themes/insperitytheme/index.php(14): Illuminate\View\View->render()
+#6 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-includes/template-loader.php(106): include('/Users/chasedem...')
+#7 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-blog-header.php(19): require_once('/Users/chasedem...')
+#8 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/index.php(17): require('/Users/chasedem...')
+#9 {main}
+  thrown in /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/cache/acorn/framework/views/d97d794e9fd0b722bfaa0df890581ffd29b71acb.php on line 6
