@@ -155,3 +155,46 @@ Stack trace:
 [28-Mar-2023 20:35:06 UTC] PHP Parse error:  syntax error, unexpected token "function" in /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/plugins/insperity-cpt/insperity-client.php on line 13
 [28-Mar-2023 20:36:30 UTC] PHP Parse error:  syntax error, unexpected token "}" in /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/plugins/insperity-cpt/insperity-client.php on line 23
 [28-Mar-2023 20:36:39 UTC] PHP Parse error:  syntax error, unexpected token "}" in /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/plugins/insperity-cpt/insperity-client.php on line 23
+[28-Mar-2023 21:41:03 UTC] PHP Parse error:  syntax error, unexpected end of file in /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/plugins/insperity-cpt/insperity-client.php on line 55
+[28-Mar-2023 21:42:06 UTC] PHP Parse error:  syntax error, unexpected end of file in /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/plugins/insperity-cpt/insperity-client.php on line 55
+[28-Mar-2023 17:51:46 America/New_York] PHP Fatal error:  Uncaught TypeError: date_create(): Argument #1 ($datetime) must be of type string, array given in /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/plugins/insperity-cpt/insperity-client.php:90
+Stack trace:
+#0 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/plugins/insperity-cpt/insperity-client.php(90): date_create(Array)
+#1 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-includes/shortcodes.php(355): client_testimonials('', '', 'testimonials-li...')
+#2 [internal function]: do_shortcode_tag(Array)
+#3 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-includes/shortcodes.php(227): preg_replace_callback('/\\[(\\[?)(testim...', 'do_shortcode_ta...', '[testimonials-l...')
+#4 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-includes/class-wp-hook.php(308): do_shortcode('[testimonials-l...')
+#5 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-includes/plugin.php(205): WP_Hook->apply_filters('[testimonials-l...', Array)
+#6 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php(1857): apply_filters('the_content', '<!-- wp:shortco...')
+#7 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php(949): WP_REST_Posts_Controller->prepare_item_for_response(Object(WP_Post), Object(WP_REST_Request))
+#8 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-includes/rest-api/class-wp-rest-server.php(1171): WP_REST_Posts_Controller->update_item(Object(WP_REST_Request))
+#9 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-includes/rest-api/class-wp-rest-server.php(1018): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wp/v2/pages/(?...', Array, NULL)
+#10 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-includes/rest-api/class-wp-rest-server.php(442): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#11 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-includes/rest-api.php(410): WP_REST_Server->serve_request('/wp/v2/pages/19')
+#12 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-includes/class-wp-hook.php(308): rest_api_loaded(Object(WP))
+#13 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#14 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-includes/plugin.php(565): WP_Hook->do_action(Array)
+#15 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-includes/class-wp.php(399): do_action_ref_array('parse_request', Array)
+#16 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-includes/class-wp.php(780): WP->parse_request('')
+#17 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-includes/functions.php(1332): WP->main('')
+#18 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-blog-header.php(16): wp()
+#19 /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/index.php(17): require('/Users/chasedem...')
+#20 {main}
+  thrown in /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/plugins/insperity-cpt/insperity-client.php on line 90
+[28-Mar-2023 21:52:34 UTC] PHP Warning:  Attempt to read property "ID" on null in /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/plugins/insperity-cpt/insperity-client.php on line 76
+[28-Mar-2023 21:52:34 UTC] PHP Warning:  Undefined array key "_event_date" in /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/plugins/insperity-cpt/insperity-client.php on line 76
+[28-Mar-2023 21:52:59 UTC] PHP Warning:  Attempt to read property "ID" on null in /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/plugins/insperity-cpt/insperity-client.php on line 76
+[28-Mar-2023 21:52:59 UTC] PHP Warning:  Undefined array key "_event_date" in /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/plugins/insperity-cpt/insperity-client.php on line 76
+[28-Mar-2023 21:52:59 UTC] PHP Warning:  Attempt to read property "ID" on null in /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/plugins/insperity-cpt/insperity-client.php on line 76
+[28-Mar-2023 21:52:59 UTC] PHP Warning:  Undefined array key "_event_date" in /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/plugins/insperity-cpt/insperity-client.php on line 76
+[28-Mar-2023 23:25:55 UTC] PHP Warning:  Attempt to read property "ID" on null in /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/plugins/insperity-cpt/insperity-client.php on line 133
+[28-Mar-2023 23:25:55 UTC] PHP Warning:  Undefined array key "_event_date" in /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/plugins/insperity-cpt/insperity-client.php on line 133
+[28-Mar-2023 23:27:04 UTC] PHP Warning:  Attempt to read property "ID" on null in /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/plugins/insperity-cpt/insperity-client.php on line 133
+[28-Mar-2023 23:27:04 UTC] PHP Warning:  Undefined array key "_event_date" in /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/plugins/insperity-cpt/insperity-client.php on line 133
+[28-Mar-2023 23:27:04 UTC] PHP Warning:  Attempt to read property "ID" on null in /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/plugins/insperity-cpt/insperity-client.php on line 133
+[28-Mar-2023 23:27:04 UTC] PHP Warning:  Undefined array key "_event_date" in /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/plugins/insperity-cpt/insperity-client.php on line 133
+[28-Mar-2023 23:43:50 UTC] PHP Warning:  Undefined array key "_event_date" in /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/plugins/insperity-cpt/insperity-client.php on line 133
+[28-Mar-2023 23:43:57 UTC] PHP Warning:  Attempt to read property "ID" on null in /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/plugins/insperity-cpt/insperity-client.php on line 133
+[28-Mar-2023 23:43:57 UTC] PHP Warning:  Undefined array key "_event_date" in /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/plugins/insperity-cpt/insperity-client.php on line 133
+[28-Mar-2023 23:43:57 UTC] PHP Warning:  Attempt to read property "ID" on null in /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/plugins/insperity-cpt/insperity-client.php on line 133
+[28-Mar-2023 23:43:57 UTC] PHP Warning:  Undefined array key "_event_date" in /Users/chasedemaster.tech/Local Sites/insperity-theme/app/public/wp-content/plugins/insperity-cpt/insperity-client.php on line 133
