@@ -1,7 +1,7 @@
-<header class="banner">
-  <a class="brand" href="<?php echo e(home_url('/')); ?>">
-    <?php echo $siteName; ?>
-
+<header class="banner p-6 border shadow-lg">
+  <a class="brand text-blue-900 text-2xl " href="<?php echo e(home_url('/')); ?>">
+    ❇️<?php echo $siteName; ?> 
+    <p> <div class="text-green-500 text-base">HR that makes a difference </div>
   </a>
 
   <?php if(has_nav_menu('primary_navigation')): ?>
