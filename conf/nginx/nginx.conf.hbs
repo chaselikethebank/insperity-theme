@@ -28,6 +28,9 @@ http {
 		default '';
 		https on;
 	}
+	location ~* \.(blade\.php)$ {
+    deny all;
+}
 
 	include site.conf;
 }
