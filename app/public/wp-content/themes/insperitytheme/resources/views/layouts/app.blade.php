@@ -1,17 +1,22 @@
 <a class="sr-only focus:not-sr-only" href="#main">
-  {{ __('Skip to content') }}
+    {{ __('Skip to content') }}
 </a>
+
 
 @include('sections.header')
 
-  <main id="main" class="main">
-    @yield('content')
-  </main>
+<main id="main" class="main flex mt-4 p-4">
+    
+    {{-- @include('partials.content-subscribe') --}}
+    @yield('content') 
 
-  @hasSection('sidebar')
+</main>
+
+@hasSection('sidebar')
     <aside class="sidebar">
-      @yield('sidebar')
+        @yield('sidebar')
+
     </aside>
-  @endif
+@endif
 
 @include('sections.footer')

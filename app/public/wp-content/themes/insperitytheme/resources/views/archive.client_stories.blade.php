@@ -10,17 +10,12 @@
 
     {!! get_search_form(false) !!}
   @endif
-{{-- style here  --}}
-<div class="justify-items-center border border-sky-500"
-{{-- tailwind class containers and alignement  --}}
->
 
   @while(have_posts()) @php(the_post() )
-    @includeFirst(['partials.content-' . get_post_type(), 'partials.content', get_the_terms()])
     
+    @includeFirst(['partials.content-' . get_post_type(), 'partials.content', get_the_terms()])
   @endwhile
   
-</div>
 
   {!! get_the_posts_navigation() !!}
 @endsection
@@ -29,4 +24,3 @@
   @include('sections.sidebar')
 @endsection
 
-{{-- archive of all stories ~ container --}}
